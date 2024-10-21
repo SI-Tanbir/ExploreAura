@@ -1,0 +1,55 @@
+/* starting of navigation bar */
+
+main{
+    width: 1440px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-title{
+    display: flex;
+    /* width:100% */
+    
+}
+/* .header-title img{
+    width:100%
+} */
+
+.navigation-content ul{
+    display: flex;
+    list-style:none;
+    gap:10px;
+  
+}
+.navigation-content a{
+    text-decoration: none;
+    color:black
+}
+.menu-icon{
+    display: none; 
+} 
+
+/* responsive design for small device */
+@media screen  and (max-width:568px){
+
+    .navigation-content ul{
+        display: none;
+    }
+    .menu-icon{
+        display: inline;
+    }
+    
+    #menu-icon-mobile {
+        width: 35px;
+        margin-top: 1rem;
+    }
+
+
+
+
+    
+}
