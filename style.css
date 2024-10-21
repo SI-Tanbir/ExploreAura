@@ -12,7 +12,7 @@ main{
 }
 
 .header-title{
-    display: flex;
+    display: flex;;
     /* width:100% */
     
 }
@@ -126,16 +126,20 @@ width: 100%;
 
     display: grid;
     grid-template-areas: 
-    'a  b b'
-    'c d e'
-    'f g g'
-
-    ;
+    'a a a a a a b b b b b b'
+    'c c c c d d d d d e e e'
+    'f f f f f g g g g g g g';
+    gap: 10px;
 
 
 
 }
 
+.image-container >div > img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
 .why-choose-use-content{
     text-align: center;
@@ -165,6 +169,71 @@ width: 100%;
     margin: 0 auto;
 }
 
+
+.deals-card{
+    padding: 20px;
+    bottom: 300px;
+    background-color: #ffffffa6;
+    border-radius: 10px;
+    position: relative;
+    left: 40%;
+    width: 500px;
+
+}
+
+
+#footer-container{
+    display: inline;
+    text-align: center;
+}
+#footer-tittle{
+    margin-left: 40vw
+}
+.social-link ul{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+.social-link li{
+    /* display: flex; */
+    list-style: none;
+   
+}
+footer{
+    background-color: #1313181e;
+}
+.find-now button{
+    background-color: orangered;
+    color:whitesmoke;
+    border:none;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+#subscribe-btn{
+    background-color: orangered;
+    color:whitesmoke;
+    border:none;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.neweletter-subscribe{
+    border:1px solid orangered;
+    border-radius: 10px;
+    padding:20px
+}
+.newsletter-container{
+    display: flex;
+    width: 100%;
+    gap:10px
+}
+.newletter-input input{
+    margin-bottom: 10px;
+    display: flex;
+}
 
 /* responsive design for small device */
 @media screen  and (max-width:568px){
